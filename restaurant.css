@@ -1,0 +1,259 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  margin: auto;
+  font-family: "Source Serif Pro", serif;
+  background: #fafafa;
+  max-width: 100em;
+}
+.welcome {
+  height: 100vh;
+  background: url(https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?cs=srgb&dl=pexels-ella-olsson-1640777.jpg&fm=jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: white;
+  font-size: 200%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.overlay {
+  background: rgba(0, 0, 0, 0.2);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+.st {
+  z-index: 1;
+  margin: 20px;
+}
+button {
+  background: rgba(0, 0, 0, 0);
+  color: white;
+  font-family: "Source Serif Pro", serif;
+  font-weight: bold;
+  font-size: large;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  padding-left: 3%;
+  padding-right: 3%;
+  border: solid white 2px;
+  border-radius: 5px;
+}
+button:hover {
+  background: white;
+  color: black;
+}
+.food {
+  text-align: center;
+  width: 100%;
+  padding: 100px;
+}
+.food h2 {
+  font-size: 300%;
+}
+.food p {
+  font-size: 150%;
+}
+.mul {
+  width: 70%;
+  margin: auto;
+  margin-top: 5%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.item1 {
+  flex-basis: 33.3333%;
+}
+.word {
+  line-height: 2.5em;
+  padding: 2em;
+  color: #878787;
+  background: white;
+}
+.word h3 {
+  color: black;
+}
+.restaurant {
+  background: white;
+  padding: 100px;
+}
+.restaurant p {
+  width: 60%;
+  margin: auto;
+  color: #878787;
+  line-height: 2em;
+  font-size: 140%;
+}
+.restaurant h2 {
+  text-align: center;
+  font-size: 300%;
+  margin-bottom: 50px;
+}
+.grid_container {
+  height: 100vh;
+  width: 100%;
+  background: white;
+  display: flex;
+  justify-content: center;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(20, 1fr);
+  grid-template-rows: repeat(20, 5vh);
+  grid-gap: 10px;
+}
+.grid img {
+  height: 100%;
+  width: 100%;
+  transition: transform 1s;
+}
+.img1 {
+  grid-column: 2 / span 2;
+  grid-row: 6 / span 3;
+}
+.img2 {
+  grid-column: 1 / span 3;
+  grid-row: 9 / span 4;
+}
+.img3 {
+  grid-column: 4 / span 4;
+  grid-row: 7 / span 5;
+}
+.img4 {
+  grid-column: 8 / span 5;
+  grid-row: 4 / span 6;
+}
+.img5 {
+  grid-column: 8 / span 3;
+  grid-row: 10 / span 4;
+}
+.img6 {
+  grid-column: 13 / span 3;
+  grid-row: 6 / span 4;
+}
+.img7 {
+  grid-column: 11 / span 5;
+  grid-row: 10 / span 6;
+}
+.img8 {
+  grid-column: 16 / span 4;
+  grid-row: 7 / span 6;
+}
+.img9 {
+  grid-column: 20 / span 1;
+  grid-row: 6 / span 6;
+}
+.img10 {
+  grid-column: 20 / span 1;
+  grid-row: 12 / span 2;
+}
+.grid img:hover {
+  transform: scale(1.05);
+}
+.meet {
+  background: white;
+  padding: 10%;
+}
+.chef {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.dan {
+  flex-basis: 50%;
+}
+.nick {
+  flex-basis: 50%;
+}
+.chef p {
+  width: 70%;
+  margin: auto;
+  color: #878787;
+  line-height: 2em;
+  font-size: 140%;
+}
+.chef img {
+  width: 200px;
+  height: 200px;
+  border-radius: 200px;
+  display: block;
+  margin: auto;
+}
+.name {
+  font-size: 180%;
+  text-align: center;
+  margin: 30px 0 10px 0;
+}
+.title {
+  text-align: center;
+  color: #878787;
+  margin-bottom: 20px;
+}
+.menu {
+  width: 100%;
+  padding: 100px;
+}
+.dropdown {
+  width: 50%;
+  margin: auto;
+}
+.dropdown img {
+  width: 15%;
+  height: auto;
+  border-radius: 10%;
+  flex-basis: 15%;
+}
+
+.txt_cont {
+  flex-basis: 85%;
+  display: flex;
+  flex-direction: column;
+  padding-left: 30px;
+}
+.txt_cont h2 {
+  margin-bottom: 20px;
+}
+.cont1 {
+  border-bottom: solid 1px #cec9c9;
+  padding: 50px 0;
+  display: flex;
+  flex-direction: row;
+}
+.dropdown a {
+  text-decoration: none;
+  color: #777777;
+  font-weight: bold;
+  font-size: large;
+  border-bottom: solid 2px #cfcccc;
+  margin: auto;
+}
+footer {
+  background: black;
+  color: white;
+  height: 35vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+footer p {
+  color: #777777;
+}
+footer div {
+  flex-basis: 20%;
+  margin: 50px;
+}
