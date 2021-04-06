@@ -7,11 +7,10 @@ body {
   margin: auto;
   font-family: "Source Serif Pro", serif;
   background: #fafafa;
-  max-width: 100em;
 }
 .welcome {
   height: 100vh;
-  background: url(https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?cs=srgb&dl=pexels-ella-olsson-1640777.jpg&fm=jpg);
+  background: url(images/background.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -231,14 +230,6 @@ img {
   padding: 50px 0;
   display: flex;
   flex-direction: row;
-}
-.dropdown a {
-  text-decoration: none;
-  color: #777777;
-  font-weight: bold;
-  font-size: large;
-  border-bottom: solid 2px #cfcccc;
-  margin: auto;
 }
 footer {
   background: black;
