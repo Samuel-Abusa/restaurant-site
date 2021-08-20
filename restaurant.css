@@ -206,16 +206,15 @@ img {
   padding: 100px;
 }
 .menu h1 {
-  position: relative;
-  width: 50%;
-  left: 48%;
+  text-align: center;
   margin-bottom: 20px;
 }
 .menu h4 {
-  position: relative;
   width: 50%;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
   color: #777777;
-  left: 40%;
   margin-bottom: 50px;
 }
 .dropdown {
@@ -260,4 +259,80 @@ footer p {
 footer div {
   flex-basis: 20%;
   margin: 50px;
+}
+
+@media screen and (min-width: 280px) and (max-width: 768px) {
+  .welcome {
+    height: 50vh;
+    font-size: 100%;
+  }
+  .food {
+    padding: 20px;
+  }
+  .food h2 {
+    font-size: 200%;
+  }
+  .food p {
+    font-size: 120%;
+  }
+  .mul {
+    width: 100%;
+    flex-direction: column;
+  }
+  .mul img {
+    display: none;
+    width: 0;
+    height: 0;
+  }
+  .restaurant {
+    padding: 50px;
+  }
+  .restaurant h2 {
+    font-size: 200%;
+  }
+  .restaurant p {
+    width: 90%;
+    font-size: 120%;
+  }
+  .grid_container {
+    height: 0vh;
+  }
+  .grid {
+    display: none;
+  }
+  .meet {
+    padding: 2px;
+  }
+  .meet h2 {
+    font-size: 190%;
+  }
+  .dan {
+    margin-bottom: 70px;
+  }
+  .chef {
+    flex-direction: column;
+  }
+  .chef p {
+    width: 90%;
+    font-size: 100%;
+  }
+  .menu {
+    margin-top: 40px;
+    padding: 0;
+  }
+  .dropdown {
+    width: 100%;
+  }
+  .dropdown img {
+    display: none;
+    flex-basis: 0;
+    width: 0;
+  }
+  .txt_cont {
+    flex-basis: 100%;
+  }
+  footer {
+    height: 115vh;
+    flex-direction: column;
+  }
 }
